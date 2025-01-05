@@ -22,7 +22,57 @@
 
     #homepage-asset-three {
         position: absolute;
-        bottom: 0;
+        bottom: 5rem;
         right: 0;
+    }
+}
+
+#case-study {
+    background-color: #7E7D7D;
+
+    #homepage-asset-four {
+        position: absolute;
+        bottom: -10rem;
+        right: 0;
+    }
+
+    .section-main {
+        padding-left: 2rem;
+
+        &__title {
+            color: $color-primary;
+        }
+    }
+
+    .section-image {
+        position: relative;
+
+        .background-box {
+            background-color: $color-secondary;
+            width: 100%;
+            height: inherit;
+            position: absolute;
+            top: -24px;
+            left: 24px;
+            z-index: 1;
+            border-radius: 24px;
+            box-shadow: 0px 4px 4px rgba(#000000, .25);
+        }
+
+        img {
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+
+#welt-message {
+    
+    .section__template {
+        background: $gold-gradient-left;
+
+        .section-main {
+            padding-left: 2rem;
+        }
     }
 }
