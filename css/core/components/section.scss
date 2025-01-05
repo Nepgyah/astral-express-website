@@ -1,0 +1,37 @@
+@use '../base/variables' as *;
+
+.section {
+    display: block;
+    position: relative;
+    width: 100%;
+
+    &__template {
+        position: relative;
+        max-width: $max-width;
+        margin: 0 auto;
+        z-index: 1;
+
+        .section-main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 2rem;
+
+            &__title {
+                font-size: .75rem;
+            }
+
+            &__header {
+                font-size: 3rem;
+            }
+
+            &__text {
+                font-size: 1rem;
+            }
+        }
+
+        .section-content {
+
+        }
+    }
+}

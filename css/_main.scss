@@ -1,0 +1,32 @@
+@use './core/base/reset';
+@use './core/base/typography';
+@use './core/base/variables' as *;
+
+@import './core/components/hero';
+@import './core/components/header';
+@import './core/components/section.scss';
+
+html,
+body {
+    background-color: $color-primary;
+    scroll-behavior: smooth;
+    scroll-padding: 4em;
+    font-size: 16px;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+* {
+    font-family: "Noto Sans JP", Helvetica, Arial, sans-serif;
+    color: white
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Noto Serif JP', Arial, sans-serif; 
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+}
