@@ -73,6 +73,7 @@
 
     &__button-container {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        column-gap: 4rem;
     }
 }

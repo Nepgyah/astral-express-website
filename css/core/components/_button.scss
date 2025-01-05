@@ -1,0 +1,25 @@
+@use '../base/variables' as *;
+
+.button {
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 1.5rem;
+
+    &--primary {
+        background-color: $color-secondary;
+
+        &:hover {
+            background-color: #a18468;
+        }
+    }
+
+    &--text {
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

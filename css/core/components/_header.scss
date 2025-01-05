@@ -15,8 +15,14 @@
         margin: 0 auto;
         height: 100%;
         max-width: 1200px;
+        padding: .5rem 0px;
     }
 
+    &__logo {
+        img {
+            height: 100%;
+        }
+    }
     &__menu {
         display: flex;
         justify-content: space-between;

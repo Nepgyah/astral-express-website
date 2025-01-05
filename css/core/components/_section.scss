@@ -1,0 +1,123 @@
+@use '../base/variables' as *;
+
+.section {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 5rem 0;
+    
+    &--full-color {
+        margin: 5rem 0;
+    }
+    &__template {
+        position: relative;
+        max-width: $max-width;
+        margin: 0 auto;
+        z-index: 1;
+
+        &--banner {
+            padding: 3rem;
+            display: flex;
+            border-radius: 1.5rem;
+            .section-main {
+                width: 60%;
+                
+                div, h2 {
+                    color: white;
+                }
+            }
+
+            .section-image {
+                width: 40%;
+            }
+        }
+        &--two-col {
+            display: flex;
+
+            .section-main {
+                width: 50%;
+            }
+
+            .section-image {
+                width: 50%
+            }
+        }
+
+        &--stacked {
+
+            .section-main {
+                margin-bottom: 5rem;
+            }
+        }
+
+        .section-main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            row-gap: 2rem;
+
+            &__title {
+                font-size: .75rem;
+                color: $color-secondary;
+            }
+
+            &__header {
+                font-size: 3rem;
+            }
+
+            &__text {
+                font-size: 1rem;
+            }
+        }
+
+        .section-image {
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .section-sub {
+            
+            &--two-col {
+                display: flex;
+                column-gap: 3rem;
+
+                .section-sub__image {
+                    width: 40%;
+                }
+
+                .section-sub__text {
+                    width: 60%;
+                }
+            }
+
+            &__image {
+                height: 460px;
+
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 1.5rem;
+                }
+            }
+
+            &__text {
+
+                &--points {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                }
+
+                .text-group {
+                    
+                    h3 {
+                        color: $color-secondary;
+                        margin-bottom: .75rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,2 +1,28 @@
+@use '../core/base/variables' as *;
 @import '../main';
 @import '../core/components/header';
+
+#homepage-asset-one {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#homepage-asset-two {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#himeko-message {
+
+    .section__template {
+        background: $gold-gradient-right;
+    }
+
+    #homepage-asset-three {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
