@@ -2,6 +2,17 @@
 @import '../main';
 @import '../core/components/header';
 
+
+@keyframes floating {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
 #homepage-asset-one {
     position: absolute;
     top: 0;
@@ -18,6 +29,12 @@
 
     .section__template {
         background: $gold-gradient-right;
+
+        .section-image {
+            img {
+                animation: floating 5s ease-in-out infinite;
+            }
+        }
     }
 
     #homepage-asset-three {
@@ -71,9 +88,16 @@
     .section__template {
         background: $gold-gradient-left;
 
+        .section-image {
+            img {
+                animation: floating 5s ease-in-out infinite;
+            }
+        }
+
         .section-main {
             padding-left: 2rem;
         }
+
     }
 }
 
