@@ -1,1 +1,1 @@
-.button{font-weight:bold;padding:1rem;border-radius:1.5rem}.button--primary{background-color:#c09c7b}.button--primary:hover{background-color:#a18468}.button--text:hover{color:#c09c7b}.button:hover{cursor:pointer}
+.button{font-weight:bold;padding:1rem;border-radius:1.5rem;width:-moz-fit-content;width:fit-content}.button--primary{background-color:#c09c7b}.button--primary:hover{background-color:#a18468}.button--text:hover{color:#c09c7b}.button:hover{cursor:pointer}

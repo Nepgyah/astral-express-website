@@ -4,7 +4,8 @@
     font-weight: bold;
     padding: 1rem;
     border-radius: 1.5rem;
-
+    width: fit-content;
+    
     &--primary {
         background-color: $color-secondary;
 

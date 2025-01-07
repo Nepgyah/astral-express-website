@@ -1,0 +1,45 @@
+@use '../base/variables' as *;
+
+.footer {
+    background-color: $color-navigation;
+
+    .footer-wrapper {
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 3rem 0px;
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            column-gap: 1.5rem;
+    
+            .social {
+                background-color: $color-secondary;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 4rem;
+    
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &:hover {
+                    background-color: #a18468;
+                }
+            }
+        }
+    
+        .navigation {
+            display: flex;
+            justify-content: center;
+            column-gap: 1.5rem;
+            margin-top: 1.5rem;
+
+            .divider {
+                width: 1px;
+                height: 1.5rem;
+                background-color: white;
+            }
+        }
+    }
+}
